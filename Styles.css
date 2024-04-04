@@ -574,11 +574,94 @@ font-weight: 700;
   line-height: 2.5rem;
 }
 /* Catalog Interior Pack */
-.package__left{
- display: flex;
- justify-content: center;
-  gap: 3rem;
+.package_wrapper{
+  padding: 3rem 0;
+  max-width: 100;
 }
+.package_wrapper h2 {
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  font-display: column;
+  justify-content: center;
+}
+.package_theme {
+  padding: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.package_left {
+  width: 500rem;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.package_left img {
+  width: 60rem;
+height: 50rem;
+}
+.package_right h2 {
+  color: var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  height: -30px;
+  margin-top: 7rem;
+}
+.package_right p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: justify;
+  justify-content: space-between;
+}
+.package_theme:nth-child(3) {
+  background-color: var(--clr-semilight);
+  flex-direction: row-reverse;
+  display: flex;
+  
+}
+/* Mobile Catalog */
+ @media screen and (max-width:520px){
+  .package_wrapper{
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+  .package_wrapper{
+    
+  }
+} 
+
+/* Update Banner */
+.updateBanner_wrapper h1{
+ font-size: 5rem;
+ font-weight: 700;
+ color: var(--clr-primary) ;
+}
+/* Contact Banner */
+.contactBanner{
+  padding: 3rem 0;
+  background-color: var(--clr-semilight);
+}
+
+.contactBanner__wrapper h1{
+  font-size: 7rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+}
+.contactBanner__left{
+  color: var(--clr-dark);
+}
+.coctactBanner__right{
+background-color: var(--clr-dark);
+}
+
 
 /* Components */
 .btn{
